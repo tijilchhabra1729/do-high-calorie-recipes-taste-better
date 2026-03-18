@@ -111,9 +111,9 @@ Average ratings are remarkably stable (~4.6–4.7) across all calorie ranges and
 
 ## Assessment of Missingness
 
-### NMAR Analysis
+### MNAR Analysis
 
-The `rating` column in the interactions dataset is likely **NMAR** (Not Missing At Random). On food.com, users can submit text reviews without leaving a star rating — in the raw data these appear as 0, which we replaced with `NaN`. The decision to skip the star rating likely depends on the rating value the user *would have* given: users with neutral or lukewarm opinions may not feel strongly enough to assign a number, while users with very strong positive or negative feelings are more motivated to rate. Since the probability of missingness depends on the unobserved value itself, this is **NMAR**.
+The `rating` column in the interactions dataset is likely **MNAR** (Not Missing At Random). On food.com, users can submit text reviews without leaving a star rating — in the raw data these appear as 0, which we replaced with `NaN`. The decision to skip the star rating likely depends on the rating value the user *would have* given: users with neutral or lukewarm opinions may not feel strongly enough to assign a number, while users with very strong positive or negative feelings are more motivated to rate. Since the probability of missingness depends on the unobserved value itself, this is **MNAR**.
 
 To potentially make this MAR, we could collect additional data such as whether the user actually cooked the recipe, time spent on the recipe page, or whether the user saved/bookmarked the recipe. If the missingness could be fully explained by such observable variables, it would become MAR.
 
