@@ -1,8 +1,3 @@
----
-layout: default
-title: Do Higher-Calorie Recipes Taste Better?
----
-
 # Do Higher-Calorie Recipes Taste Better? 🍽️
 ## Investigating the Relationship Between Calories and Ratings on Food.com
 
